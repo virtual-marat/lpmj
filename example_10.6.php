@@ -1,11 +1,12 @@
 <?php // Замена цикла for для построчного извлечения результата
+
 require_once 'login.php';
 require_once 'mysql_fatal_error.php';
 
-echo 'Это файл example_10.6.php';
+echo 'p' . 'Это файл example_10.6.php' . '</p>';
 
 $db_server = mysql_connect($db_hostname, $db_username, $db_password);
-if(!$db_server)
+if (!$db_server)
     die(mysql_fatal_error('Невозможно подключиться к серверу MySQL'));
 
 mysql_select_db($db_database)
@@ -13,6 +14,8 @@ mysql_select_db($db_database)
 
 $query = 'SELECT * FROM classics';
 $result = mysql_query($query);
+if (!$result)
+    die(mysql_fatal_error('Сбой при доступе к базе данных'));
 
 for($j=0; $j < mysql_num_rows($result); $j++){
     $row = mysql_fetch_row($result);
