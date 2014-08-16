@@ -1,4 +1,4 @@
-<?php // Отправка запроса к базе данных
+<?php // Отправка запроса к базе данных MySQL
 
 require_once('login.php');
 require_once('mysql_fatal_error.php');
