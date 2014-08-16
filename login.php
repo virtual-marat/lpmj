@@ -1,4 +1,4 @@
-<?php //Файл авторизации
+<?php // Файл авторизации
 
 $db_hostname = 'localhost';
 $db_database = 'publications';
