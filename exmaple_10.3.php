@@ -1,4 +1,4 @@
-<?php // Выбор базы данных
+<?php // Выбор базы данных MySQL
 
 require_once 'login.php';
 require_once 'mysql_fatal_error.php';
