@@ -1,4 +1,4 @@
-<?php
+<?php // Функция для формирования сообщений об ошибках
 
 function mysql_fatal_error($msg) {
     $msg2 = mysql_error();
