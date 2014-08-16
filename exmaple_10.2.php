@@ -1,10 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Marat
- * Date: 16.08.14
- * Time: 1:09
- */
+<?php // Подключение к базе данных MySQL
 
 require_once 'login.php';
 require_once 'mysql_fatal_error.php';
