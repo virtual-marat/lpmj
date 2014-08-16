@@ -1,8 +1,9 @@
 <?php // Поячеечное извлечение результата
+
 require_once('login.php');
 require_once('mysql_fatal_error.php');
 
-echo 'Это файл example_10.5.php';
+echo '<p>' . 'Это файл example_10.5.php' . '</p>';
 
 $db_server = mysql_connect($db_hostname, $db_username, $db_password);
 if (!$db_server) die(mysql_fatal_error('Невозможно подключиться к серверу MySQL'));
