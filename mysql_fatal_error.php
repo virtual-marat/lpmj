@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Marat
- * Date: 16.08.14
- * Time: 14:27
- */
+
 function mysql_fatal_error($msg) {
     $msg2 = mysql_error();
 echo <<< _END
@@ -13,7 +8,7 @@ echo <<< _END
 <p>$msg: $msg2</p>
 Пожалуйста, щелкните на кнопке возврата вашего браузера
 и повторите попытку. Если проблемы не прекратятся,
-пожалуйтса, <a href="mailto:virtual.marat@gmail.com">сообщите о них
+пожалуйтса, <a href="mailto:admin@server.com">сообщите о них
 нашему администратору.</a> Спасибо.
 _END;
 }
