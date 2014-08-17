@@ -22,19 +22,18 @@ if (isset($_POST['author']) &&
     $year = get_post('year');
     $isbn = get_post('isbn');
 
-    if (isset($_POST['delete']) && $isbn != '')
-    {
-        $query = "DELETE FROM classics WHERE isbn = '$isbn'";
-        if(!(mysql_query($query)))
-            die(mysql_fatal_error('Сбой при удалении данных'));
-    }
-    else
-    {
-        $query = "INSERT INTO classics VALUES " .
-            "('$author', '$title', '$category', $year, '$isbn')";
-        if (!mysql_query($query))
-            die(mysql_fatal_error('Сбой при вставке данных'));
-    }
+    $query = "INSERT INTO classics VALUES " .
+        "('$author', '$title', '$category', $year, '$isbn')";
+    if (!mysql_query($query))
+        die(mysql_fatal_error('Сбой при вставке данных'));
+}
+
+if (isset($_POST['delete']) && (get_post('isbn') != ''))
+{
+    $isbn = get_post('isbn');
+    $query = "DELETE FROM classics WHERE isbn = '$isbn'";
+    if(!(mysql_query($query)))
+        die(mysql_fatal_error('Сбой при удалении данных'));
 }
 
 echo <<< _END
@@ -45,12 +44,12 @@ echo <<< _END
 Category: <input type="text" name="category" />
     Year: <input type="text" name="year" />
     ISBN: <input type="text" name="isbn" />
-          <input type="submit" value="Добавить запись" /> //Кнопка Добавить запись
+          <input type="submit" value="Добавить запись" /> <!--Кнопка Добавить запись-->
 </pre>
 </form>
 _END;
 
-$query = 'SELECT * FROM classcis';
+$query = 'SELECT * FROM classics';
 $result = mysql_query($query);
 
 if (!$result)
@@ -70,7 +69,7 @@ ISBN: $row[4];
 <form action="example_10.8.php" method="post">
 <input type="hidden" name="delete" value="yes" />
 <input type="hidden" name="isbn" value="$row[4]" />
-<input type="submit" value="Удалить запись" /> // Кнопка Удалить запись
+<input type="submit" value="Удалить запись" /> <!--Кнопка Удалить запись-->
 </form>
 
 _END;
