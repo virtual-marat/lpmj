@@ -1,4 +1,4 @@
-<?php // Замена цикла for для построчного извлечения результата
+<?php // Замена цикла for для построчного извлечения результата 
 
 require_once 'login.php';
 require_once 'mysql_fatal_error.php';
