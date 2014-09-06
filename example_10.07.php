@@ -1,4 +1,4 @@
-<?php // Отключение от базы данных MySQL
+<?php // Отключение от базы данных MySQL 
 
 require_once 'login.php';
 require_once 'mysql_fatal_error.php';
