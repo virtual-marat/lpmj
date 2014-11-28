@@ -1,4 +1,4 @@
-<?php // Способ безопасного доступа к MySQL и предотвращение XSS-атак
+<?php // Способ безопасного доступа к MySQL и предотвращение XSS-атак 
 
 function mysql_entities_fix_string ($string)
 {
