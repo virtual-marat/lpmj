@@ -31,7 +31,7 @@
      $query = "INSERT INTO classics VALUES" . "('$author', '$title', '$category', '$year', '$isbn')";
 
      if(!mysql_query($query))
-         echo "Сбой при вставке данныхз: $query<br/>" . mysql_error();
+         echo "Сбой при вставке данных: $query<br/>" . mysql_error();
  }
 
  if (isset($_POST['delete']))
