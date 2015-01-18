@@ -32,7 +32,7 @@ if (isset($_SERVER['PHP_AUTH_USER']) &&
             $_SESSION['forename']   = $row[0];
             $_SESSION['surname']    = $row[1];
             echo "$row[0] $row[1]: Привет $row[0], теперь Вы зарегистрированы под именем '$row[2]'";
-            die("<p><a href='example_13.06.php'>Щелкните здесь для продолжения</a></p>");
+            die("<p><a href='example_13.08.php'>Щелкните здесь для продолжения</a></p>");
         }
         else
             die("Неверная комбинация имя пользователя-пароль.");
