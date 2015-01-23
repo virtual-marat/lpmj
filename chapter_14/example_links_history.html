@@ -1,0 +1,28 @@
+<!-- Чтение ссылки на URL-адрес с помощью JavaScript -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Тестирование ссылки</title>
+</head>
+<body>
+	<a id="mylink" href="http://mysite.com">Щелкни</a><br />
+	<script type="text/javascript">
+		url = document.links.mylink.href;
+		document.write('URL-адрес: - ' + url + '<br />');
+
+		// document.write('Значение из массива: ' + document.links[0].href + '<br />');
+
+		// document.write(document.links.length + '<br />');
+
+		// for (var j = 0; j < document.links.length; ++j) {
+		// 	document.write(document.links[j].href + '<br />');
+		// };
+
+		// document.write(history.length + '<br />');
+
+		// history.go(0);
+
+		document.location.href = 'http://google.com';
+	</script>
+</body>
+</html>
