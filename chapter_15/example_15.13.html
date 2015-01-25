@@ -1,0 +1,22 @@
+<!-- Многострочная инструкция if ... else if -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="page" />
+	<input type="button" value="Выбрать страницу" onclick="selectPage();" />
+	<script type="text/javascript">
+		function selectPage()
+		{
+			page = document.getElementById("page").value;
+			if 		(page == "Home") 	document.write("Вы выбрали Home");
+			else if (page == "About") 	document.write("Вы выбрали About");
+			else if (page == "News") 	document.write("Вы выбрали News");
+			else if (page == "Login")	document.write("Вы выбрали Login");
+			else if (page == "Links")	document.write("Вы выбрали Links");
+		}
+	</script>
+</body>
+</html>
