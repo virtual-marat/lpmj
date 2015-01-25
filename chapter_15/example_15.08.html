@@ -1,0 +1,19 @@
+<!-- Инструкция, использующая оператор || -->
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		done = 0;
+		finished = 1;
+		if (finished == 1 || getnext() == 1) done = 1;
+		document.write(done);
+		function getnext()
+		{
+			document.write("Call getnext()<br />");
+			return 1;
+		}
+	</script>
+</body>
+</html>
