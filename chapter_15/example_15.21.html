@@ -1,0 +1,24 @@
+<!-- Использование команды continue в цикле for -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		haystack = new Array();
+		haystack[4] = "Иголка";
+		haystack[11] = "Иголка";
+		haystack[17] = "Иголка";
+		for (j = 0 ; j < 20 ; ++j)
+		{
+			if (haystack[j] == "Иголка") 
+			{
+				document.write("<br />- найдена в элементе " + j + "<br />");
+				continue;
+			}
+			document.write(j + ", ");
+		}
+	</script>
+</body>
+</html>

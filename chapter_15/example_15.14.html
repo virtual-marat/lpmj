@@ -1,0 +1,30 @@
+<!-- Конструкция switch -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="page" type="text" />
+	<input type="button" value="Выбрать страницу" onclick="selectPage();" />
+	<script type="text/javascript">
+		function selectPage()
+		{
+			page = document.getElementById("page").value;
+			switch(page)
+			{
+				case "Home": document.write("Вы выбрали Home");
+				break;
+				case "About": document.write("Вы выбрали About");
+				break
+				case "News": document.write("Вы выбрали News");
+				break;
+				case "Login": document.write("Вы выбрали Login");
+				break;
+				case "Links": document.write("Вы выбрали Links");
+				break;
+			}
+		}
+	</script>
+</body>
+</html>
