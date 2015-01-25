@@ -1,0 +1,26 @@
+<!-- Перехват ошибки с помощью ключевых слов try и catch -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		try
+		{
+			request = new XMLHTTPRequest();
+			document.write("Внутри try. <br />");
+		}
+		catch(err)
+		{
+			// Использование другого метода для создания запроса XML HTTP Request Object
+			document.write("Внутри catch. <br />");
+		}
+		finally
+		{
+			alert("Был обнаружен блок кода 'try'.");
+			document.write("Внутри finally. <br />");
+		}
+	</script>
+</body>
+</html>
